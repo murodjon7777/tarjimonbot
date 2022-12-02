@@ -23,7 +23,7 @@ async def bot_start(message: types.Message):
     
     
     # await message.answer(f"Assalomu aleykum {message.from_user.full_name} Tarjimon botimizga xush kelibsiz tillarni sozlash uchun sozlamar tugmasini bosing!", reply_markup=Settings)
-    await message.answer(f"Assalomu aleykum {message.from_user.full_name} Tarjimon botimizga xush kelibsiz tillarni sozlash uchun  sozlamardan tilni sozlang!" , reply_markup=setting)
+    await message.answer(f"Assalomu aleykum {message.from_user.full_name} Tarjimon botimizga xush kelibsiz tillarni sozlash uchun  sozlamardan tilni sozlang!!" , reply_markup=setting)
     # Adminga xabar beramiz
     count = db.count_users()[0]
     msg = f"{message.from_user.full_name} bazaga qo'shildi.\nBazada {count} ta foydalanuvchi bor."
