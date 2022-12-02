@@ -37,6 +37,7 @@ async def send_ad_to_all(message: types.Message,state=FSMContext):
         chat_id=ADMINS[0],
         text = f"Active {active} Unactive: {unactive}"
     )
+    await state.finish()
 @dp.message_handler(text="/active",user_id=ADMINS)
 async def send_ad_to_all(message: types.Message):
     users = db.select_all_users()
@@ -54,7 +55,7 @@ async def send_ad_to_all(message: types.Message):
         chat_id=ADMINS[0],
         text = f"Active {active} Unactive: {unactive}"
     )
-    await state.finish()
+    
 
 @dp.message_handler(text="/cleandb", user_id=ADMINS)
 async def get_all_users(message: types.Message):
