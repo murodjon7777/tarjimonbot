@@ -19,6 +19,10 @@ tar={
     "🇰🇷Korean":"korean",
     "🇮🇹Italian":"italian",
     "🇪🇸Spanish":"spanish",
+    "🇹🇷Turkish":"turkish",
+    "🇰🇷Korean":"korean",
+    "🇯🇵Japan":"japanese",
+    "🇨🇳China":"chinese",
 }
 @dp.message_handler(text="Tilni sozlash")
 async def til(message:types.Message):

@@ -12,9 +12,14 @@ menu = ReplyKeyboardMarkup(
         KeyboardButton(text="🇸🇦Arabic"),
         ],
         [ 
-        KeyboardButton(text="🇰🇷Korean"), 
+        KeyboardButton(text="🇹🇷Turkish"), 
         KeyboardButton(text="🇮🇹Italian") ,
         KeyboardButton(text="🇪🇸Spanish") ,
+        ],
+        [ 
+        KeyboardButton(text="🇰🇷Korean"), 
+        KeyboardButton(text="🇯🇵Japan") ,
+        KeyboardButton(text="🇨🇳China") ,
         ]
       
     ],
