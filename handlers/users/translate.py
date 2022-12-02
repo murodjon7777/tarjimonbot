@@ -22,7 +22,7 @@ tar={
     "🇹🇷Turkish":"turkish",
     "🇰🇷Korean":"korean",
     "🇯🇵Japan":"japanese",
-    "🇨🇳China":"chinese",
+    "🇨🇳China":"zh-TW",
 }
 @dp.message_handler(text="Tilni sozlash")
 async def til(message:types.Message):
