@@ -46,7 +46,7 @@ async def send_ad_to_all(message: types.Message):
     for user in users:
         try:
             user_id = user[0]
-            # await bot.send_message(chat_id=user_id, text="Taklif fikrlar uchun @uzbek_7700")
+            await bot.send_message(chat_id=user_id, text="")
             await asyncio.sleep(0.05)
             active+=1
         except:
