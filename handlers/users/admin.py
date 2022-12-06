@@ -27,14 +27,15 @@ async def send_ad_to_all(message: types.Message,state=FSMContext):
     unactive=0
     for user in users:
         try:
-            active+=1
             user_id = user[0]
             await bot.send_message(chat_id=user_id, text=text1)
-            await asyncio.sleep(0.05)
+            await asyncio.sleep(0.05) 
+            active+=1
         except:
             unactive+=1
     await bot.send_message(
         chat_id=ADMINS[0],
+        
         text = f"Active {active} Unactive: {unactive}"
     )
     await state.finish()
